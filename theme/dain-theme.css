@@ -12,7 +12,7 @@
   --dt-shadow:0 1.6px 3.6px rgba(0,0,0,.13),0 .3px .9px rgba(0,0,0,.11);
   --dt-shadow2:0 6.4px 14.4px rgba(0,0,0,.13),0 1.2px 3.6px rgba(0,0,0,.11);
   --dt-r:8px; --dt-r-btn:4px;
-  --dt-hero:linear-gradient(90deg,#f3f0fe 0%,#e8e0fc 50%,#dccff9 100%);
+  --dt-hero:linear-gradient(90deg,#dccff9 0%,#e8e0fc 50%,#f3f0fe 100%);
   --dt-logo:linear-gradient(135deg,#0f6cbd,#7a4cf0);
   --dt-font:"Segoe UI","Segoe UI Variable",Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
 }
