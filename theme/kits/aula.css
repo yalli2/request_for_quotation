@@ -1,0 +1,31 @@
+/* kit: aula — 교재형 인터랙티브 코스 (aula1~5 등 assets/app.css + engine.js 구조)
+   구조: .top / .hero(그리드) / .uhero / .tabs / .ucard / .ex */
+html:root{--c:var(--dt-blue)!important;--c2:var(--dt-blue-l)!important;--ink:var(--dt-ink);--mut:var(--dt-muted);--bg:var(--dt-bg);--line:var(--dt-line);--ok:var(--dt-green);--bad:var(--dt-red);--r:var(--dt-r)}
+html body :is(h1,h2,h3,.unum,.stats b,.logo){font-family:var(--dt-font)}
+html body h1{font-weight:600;letter-spacing:-.6px}
+.top{background:#fff;backdrop-filter:none}
+.logo{background:var(--dt-logo);border-radius:8px;font-weight:700}
+.gear{border-color:var(--dt-line2);border-radius:var(--dt-r-btn)}
+.hero{position:relative;isolation:isolate;padding-bottom:36px}
+.hero::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--dt-hero);border-bottom:1px solid var(--dt-line);z-index:-1}
+.eyebrow{color:var(--dt-blue)}
+.lead{color:var(--dt-ink2)}
+.stats div{border:0;box-shadow:var(--dt-shadow)}
+.stats b,.unum{color:var(--dt-ink);font-weight:600}
+.howto{border:0;border-top:0;box-shadow:var(--dt-shadow)}
+.search{border-color:var(--dt-line2);border-radius:var(--dt-r-btn)}
+.ucard,.gcard,.ex{border:0;box-shadow:var(--dt-shadow)}
+.ucard:hover{box-shadow:var(--dt-shadow2);transform:none}
+.gcard{border-left:4px solid var(--dt-blue)}
+.tags span{background:var(--dt-blue-l);color:var(--dt-blue-d)}
+.uhero{background:var(--dt-hero)}
+.tabs{background:#fff}
+.tabs button{color:var(--dt-ink);font-weight:600}
+.tabs button.on{background:var(--dt-ink);color:#fff}
+.btn{border-radius:var(--dt-r-btn);font-weight:600}
+.btn:hover{filter:none;background:var(--dt-blue-d)}
+.btn.ghost{border-color:var(--dt-line2)}
+.btn.ghost:hover{background:var(--dt-bg2)}
+.exn{background:var(--dt-ink)}
+.seg button.on{background:var(--dt-ink)}
+.vcard,.opt,.chip{border-radius:var(--dt-r)}

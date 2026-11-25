@@ -1,0 +1,29 @@
+/* kit: obra — 직무 현장 스페인어 (construction_spanish_1~3 style.css 구조)
+   구조: .top(어두운 바) / .hero(격자 종이) / .uh / .ucard / .btn */
+html:root{--navy:var(--dt-ink);--ink:var(--dt-ink);--mute:var(--dt-muted);--line:var(--dt-line);--acc:var(--dt-blue);--paper:var(--dt-bg3);--soft:var(--dt-bg2);--ok:var(--dt-green)}
+html body{background:var(--dt-bg)}
+html body :is(h1,h2,h3,.bv,.bt b,.ucard h3,.ucard .no,.uh h1,.box h3,.fc .fe,.q,.res .big,.doc .hw){font-family:var(--dt-font)}
+.top{background:#fff;color:var(--dt-ink);border-bottom:1px solid var(--dt-line)}
+.bv{background:var(--dt-logo);border-radius:8px;font-size:20px}
+.bt b{color:var(--dt-ink);font-weight:600}
+.bt small,.bt span{color:var(--dt-muted)}
+.top nav a,.top nav button{color:var(--dt-ink);border-color:var(--dt-line2);background:#fff}
+.top nav a:hover,.top nav button:hover{background:var(--dt-bg2)}
+.hero{background:var(--dt-hero);border-left:0;border-radius:var(--dt-r);box-shadow:var(--dt-shadow)}
+.hero h1{color:var(--dt-ink);font-weight:600}
+.hero .lv{background:var(--dt-ink);border-radius:var(--dt-r-btn)}
+.ucard{border:0;border-top:3px solid var(--dt-blue);border-radius:var(--dt-r);box-shadow:var(--dt-shadow)}
+.ucard:hover{box-shadow:var(--dt-shadow2)}
+.ucard h3{color:var(--dt-ink);font-weight:600}
+.ucard .no{color:var(--dt-blue)}
+.uh h1{color:var(--dt-ink);font-weight:600}
+.uh .n{background:var(--dt-blue)}
+.btn{background:var(--dt-blue);border-radius:var(--dt-r-btn);font-weight:600}
+.btn:hover{background:var(--dt-blue-d)}
+.btn.ghost{background:#fff;color:var(--dt-ink);border:1px solid var(--dt-line2)}
+.scene,.tip,.pat{border-left-color:var(--dt-blue)}
+.dlg,.drill,.vt,.fig,.gt{border-radius:var(--dt-r);overflow:hidden}
+.gt th{background:var(--dt-ink)}
+.play{background:var(--dt-blue-l);color:var(--dt-blue)}
+.opt,.search,select{border-radius:var(--dt-r-btn)}
+.box{border-top-color:var(--dt-blue);border-radius:var(--dt-r)}

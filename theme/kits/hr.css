@@ -1,0 +1,31 @@
+/* kit: hr — HR 성인 프로그램 (7emotions 등 css/style.css 구조)
+   구조: .topbar / .hero / .chhead / .card / .tool / .btn(.y) */
+html:root{--ink:var(--dt-ink);--ink-2:var(--dt-ink2);--muted:var(--dt-muted);--line:var(--dt-line);--bg:var(--dt-bg3);--deep:var(--dt-blue);--deep-2:var(--dt-blue-d);--r:var(--dt-r);--shadow:var(--dt-shadow)}
+.topbar{background:#fff;color:var(--dt-ink);border-bottom:1px solid var(--dt-line)}
+.topbar .brand{color:var(--dt-ink);font-weight:600}
+.topbar .brand .logo{background:var(--dt-logo);border-radius:8px;color:#fff}
+.topnav a{color:var(--dt-ink);opacity:1;border-radius:var(--dt-r-btn)}
+.topnav a:hover,.topnav a.on{background:var(--dt-bg2)}
+.roomchip{background:var(--dt-ink);color:#fff;border-radius:16px}
+.hero{background:var(--dt-hero);color:var(--dt-ink);border-bottom:1px solid var(--dt-line)}
+.hero h1{font-weight:600}
+.hero p{opacity:1;color:var(--dt-ink2)}
+.hero .kicker{color:var(--dt-blue)}
+.hero .btn.ghost{color:var(--dt-ink)!important;background:#fff;border:1px solid var(--dt-line2)}
+.chhead{background:var(--dt-hero);color:var(--dt-ink);border-top:4px solid var(--emo,var(--dt-blue));border-bottom:1px solid var(--dt-line)}
+.chhead .kicker{color:var(--emo,var(--dt-blue))}
+.chhead :is(p,.small,.muted){color:var(--dt-ink2)}
+.btn{border-radius:var(--dt-r-btn);font-weight:600}
+.btn.y{background:var(--dt-blue);color:#fff}
+.btn.y:hover{background:var(--dt-blue-d)}
+.btn.ghost{background:#fff;color:var(--dt-ink);border:1px solid var(--dt-line2)}
+.card,.tool,.live,.emocard,.chlist a{border-radius:var(--dt-r);box-shadow:var(--dt-shadow)}
+.emocard:hover,.chlist a:hover{box-shadow:var(--dt-shadow2)}
+.chnav{background:#fff}
+.chnav button{border-radius:20px;color:var(--dt-ink)}
+.chnav button.on{background:var(--dt-ink);color:#fff}
+table.tbl th{background:var(--dt-ink)}
+.tool-head .tag{background:var(--dt-ink)}
+.opt.sel{background:var(--dt-ink);border-color:var(--dt-ink)}
+input,select,textarea{border-radius:var(--dt-r-btn);border-width:1px}
+.roomchip.off{background:var(--dt-bg2);color:var(--dt-ink)}

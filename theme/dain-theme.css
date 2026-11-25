@@ -1,0 +1,28 @@
+/* =====================================================================
+   다인에듀 공통 테마 (base)
+   https://yalli2.github.io/request_for_quotation/ 스타일을 모든 학습 사이트에 입힙니다.
+   각 사이트는 이 파일 + kits/<사이트 계열>.css 를 </head> 직전에 연결합니다.
+   여기 값을 바꾸면 연결된 모든 사이트가 함께 바뀝니다.
+   ===================================================================== */
+:root{
+  --dt-ink:#1b1b1b; --dt-ink2:#424242; --dt-muted:#616161; --dt-line:#e1e1e1; --dt-line2:#d1d1d1;
+  --dt-bg:#ffffff; --dt-bg2:#f5f5f5; --dt-bg3:#fafafa;
+  --dt-blue:#0f6cbd; --dt-blue-d:#115ea3; --dt-blue-l:#ebf3fc; --dt-violet:#7a4cf0;
+  --dt-green:#107c10; --dt-green-l:#dff6dd; --dt-red:#c50f1f; --dt-red-l:#fde7e9; --dt-amber:#bc4b09; --dt-amber-l:#fff4ce;
+  --dt-shadow:0 1.6px 3.6px rgba(0,0,0,.13),0 .3px .9px rgba(0,0,0,.11);
+  --dt-shadow2:0 6.4px 14.4px rgba(0,0,0,.13),0 1.2px 3.6px rgba(0,0,0,.11);
+  --dt-r:8px; --dt-r-btn:4px;
+  --dt-hero:linear-gradient(105deg,#f3f7fe 0%,#e8f0fd 45%,#efe9fb 100%);
+  --dt-logo:linear-gradient(135deg,#0f6cbd,#7a4cf0);
+  --dt-font:"Segoe UI","Segoe UI Variable",Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+}
+html body{font-family:var(--dt-font);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:clip}
+html body :is(button,input,select,textarea){font-family:inherit}
+html body :is(h1,h2,h3,h4){letter-spacing:-.3px}
+::selection{background:#cfe4fa}
+:focus-visible{outline:2px solid var(--dt-blue);outline-offset:2px}
+html body input[type=range],html body input[type=checkbox],html body input[type=radio]{accent-color:var(--dt-blue)}
+
+/* 전체 폭 밝은 히어로 띠 — 폭이 제한된 히어로 요소에 class 대신 kit에서 사용 */
+.dt-band{position:relative;isolation:isolate}
+.dt-band::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--dt-hero);border-bottom:1px solid var(--dt-line);z-index:-1}

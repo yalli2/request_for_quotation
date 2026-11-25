@@ -1,0 +1,32 @@
+/* kit: course — 다인에듀 과정 교재 사이트 (dele_a1·a2, dainedu_dele_b1·b2, flex_dainedu, snult_dainedu, gdu_*, basic_grammar_12w, travel_spanish_8w …)
+   구조: assets/app.css · .top / .hero / .bhero / .uhead / .card / .drill */
+html:root{--c:var(--dt-blue)!important;--cl:var(--dt-blue-l)!important;--ink:var(--dt-ink);--sub:var(--dt-muted);--line:var(--dt-line);--bg:var(--dt-bg);--ok:var(--dt-green);--ng:var(--dt-red);--r:var(--dt-r)}
+html body{background:var(--dt-bg)}
+.top{background:#fff;backdrop-filter:none;border-bottom:1px solid var(--dt-line)}
+.brand{font-weight:600}
+.brand i{background:var(--dt-logo);border-radius:7px}
+.vbtn{border-color:var(--dt-line2);border-radius:var(--dt-r-btn)}
+.hero,.bhero,.uhead{background:var(--dt-hero);color:var(--dt-ink);border-bottom:1px solid var(--dt-line)}
+.hero h1,.bhero h1,.uhead h1{font-weight:600;color:var(--dt-ink)}
+.hero p,.bhero p,.uhead p{opacity:1;color:var(--dt-ink2)}
+.bhero .ico{background:#fff;box-shadow:var(--dt-shadow)}
+.hero input{border:1px solid var(--dt-line2);border-radius:var(--dt-r-btn)}
+.cat{border-color:var(--dt-muted);color:var(--dt-ink);font-weight:600}
+.cat.on{background:var(--dt-ink);color:#fff;border-color:var(--dt-ink)}
+.toc a{background:#fff;border:1px solid var(--dt-line2);color:var(--dt-ink);font-weight:600}
+.toc a:hover{background:var(--dt-bg2)}
+.uhead [class*=k],.bhero [class*=tag],.uhead .tag{color:var(--dt-blue)}
+.card,.drill,.bookrow,.ucard{border:0;border-radius:var(--dt-r);box-shadow:var(--dt-shadow)}
+.ucard:hover{box-shadow:var(--dt-shadow2);transform:none}
+.bookrow .bh{background:#fff}
+.ucard.mock{background:var(--dt-ink)}
+.uchip,.opt,.vw,.navpn a,.passage,.prompt,.optbox{border-radius:var(--dt-r)}
+.uchip:hover{border-color:var(--dt-blue)}
+.bh .go,.play,.chk,.model{border-radius:var(--dt-r-btn);background:var(--dt-blue);font-weight:600}
+.bh .go:hover,.play:hover,.chk:hover,.model:hover{background:var(--dt-blue-d)}
+.ghost,.mini,.mic,.tg{border-radius:var(--dt-r-btn)}
+.tg.on{background:var(--dt-ink);border-color:var(--dt-ink)}
+.goals,.listen{border-radius:var(--dt-r)}
+.lab{border-radius:var(--dt-r-btn)}
+.dh .no{background:var(--dt-ink);border-radius:50%}
+.sum{box-shadow:0 -2px 8px rgba(0,0,0,.08)}

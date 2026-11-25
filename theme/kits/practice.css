@@ -1,0 +1,36 @@
+/* kit: practice — 도구 따라 하기·AI 사이트 (ai_engines 메인 + practice/assets/practice.css 구조)
+   구조(메인): header(어두운 바) / nav.tabs / .card / .btn(클로드 색)
+   구조(연습실): .top / .side / .hero(어두운 그라데이션) / .card / .btn */
+html:root{--acc:var(--dt-blue);--acc2:var(--dt-violet);--accbg:var(--dt-blue-l);--ink:var(--dt-ink);--ink2:var(--dt-ink2);--muted:var(--dt-muted);--line:var(--dt-line);--bg:var(--dt-bg3);--r:var(--dt-r);--radius:var(--dt-r);--sh2:var(--dt-shadow);--shadow:var(--dt-shadow);--card:#fff;--sub:var(--dt-muted);--mute:var(--dt-muted)}
+/* 메인 페이지 header */
+body>header{background:var(--dt-hero);color:var(--dt-ink);border-bottom:1px solid var(--dt-line)}
+body>header :is(h1,h2,p,small,span){color:inherit}
+body>header .logo{background:var(--dt-logo);border-radius:10px}
+nav.tabs .tab{color:var(--dt-ink2);border-radius:20px;padding:8px 16px;margin-bottom:10px}
+nav.tabs .tab:hover{color:var(--dt-ink);background:rgba(255,255,255,.7)}
+nav.tabs .tab.on{background:var(--dt-ink);color:#fff}
+.btn{border-radius:var(--dt-r-btn);font-weight:600}
+body>header~* .btn:not(.ghost):not(.w):not(.c),.btn.g{background:var(--dt-blue)}
+body>header~* .btn:not(.ghost):not(.w):not(.c):hover{background:var(--dt-blue-d)}
+.btn.ghost,.btn.w{background:#fff;color:var(--dt-ink);border:1px solid var(--dt-line2)}
+.card,.lab{border:0;border-radius:var(--dt-r);box-shadow:var(--dt-shadow)}
+.chip.on,.seg button.on{background:var(--dt-ink);color:#fff;border-color:var(--dt-ink)}
+/* 연습실 */
+.top{background:#fff;border-bottom:1px solid var(--dt-line)}
+.brand .logo,.mhead .bigic{background:var(--dt-logo);border-radius:8px;box-shadow:none}
+.tbtn{border-radius:var(--dt-r-btn);border-color:var(--dt-line2)}
+.mi{border-radius:var(--dt-r-btn)}
+.mi.on{background:var(--dt-blue-l);border-color:transparent}
+.hero{background:var(--dt-hero);color:var(--dt-ink);border-radius:var(--dt-r);box-shadow:var(--dt-shadow)}
+.hero::before{display:none}
+.hero :is(h1,h2,h3,p,b,strong,span,small,div){color:var(--dt-ink)}
+.hero p{color:var(--dt-ink2)}
+.hero .chip{background:#fff;border-color:var(--dt-line2);color:var(--dt-ink)}
+.hero .stat{background:#fff;border:0;box-shadow:var(--dt-shadow)}
+.hero .btn{background:var(--dt-blue);color:#fff}
+.hero .btn *{color:#fff}
+.hero .btn.w{background:#fff;color:var(--dt-ink)}
+.steps li,.plan,.act,.win{border-radius:var(--dt-r)}
+body>header .tagline{color:var(--dt-ink2)}
+body>header .badge-upd{border-color:var(--dt-line2);color:var(--dt-ink2);background:#fff}
+nav.tabs a.tab{color:var(--dt-blue)!important;font-weight:600}
