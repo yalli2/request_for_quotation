@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다인에듀 비즈니스 — 기업 교육 패키지 및 가격</title>
+<meta name="description" content="다인에듀 기업·기관 교육 패키지와 가격. 언어별·분야별 패키지, 인원별 단가, 계약 기간별 할인 견적.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="gnav">
+  <div class="wrap gnav-in">
+    <a class="logo" href="#top" aria-label="다인에듀 비즈니스">
+      <span class="logo-mark">D</span>
+      <span class="logo-txt">다인에듀</span>
+      <span class="logo-sep"></span>
+      <span class="logo-sub">비즈니스</span>
+    </a>
+    <nav class="gnav-links">
+      <a href="#plans">패키지 및 가격</a>
+      <a href="#compare">운영 방식 비교</a>
+      <a href="#calc">견적 계산기</a>
+      <a href="#policy">요금 정책</a>
+      <a href="#contact">문의하기</a>
+    </nav>
+    <button class="gnav-cta" id="navQuote">견적서 <span class="badge" id="navCount">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <h1>직원 교육을 다인에듀의<br>인터랙티브 학습으로 업그레이드하세요</h1>
+        <p>외국어부터 리더십, AI 업무 자동화까지. 다인에듀가 직접 만든 <b id="heroSites">0</b>개 학습 사이트를 <b id="heroProgs">0</b>개 기업 교육 프로그램으로 정리했습니다. 인원과 계약 기간만 정하면 견적이 바로 나옵니다.</p>
+        <div class="hero-links">
+          <a href="#plans">패키지 선택 <span>›</span></a>
+          <a href="#compare">운영 방식 비교 <span>›</span></a>
+          <a href="#calc">견적 계산하기 <span>›</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="tile-cloud" id="tileCloud"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="plans" id="plans">
+    <div class="wrap">
+      <h2 class="sec-title">비즈니스에 맞는 교육 패키지 찾기</h2>
+      <div class="toggles">
+        <div class="pill" role="tablist" aria-label="패키지 구분" id="pkgPill">
+          <button class="on" data-g="lang">언어별 패키지</button>
+          <button data-g="field">분야별 패키지</button>
+        </div>
+        <div class="pill" role="tablist" aria-label="계약 기간" id="termPill"></div>
+      </div>
+      <p class="sec-note" id="planNote"></p>
+      <div class="plan-grid" id="planGrid"></div>
+      <p class="foot-mini">가격은 1명·1개월 기준이며 부가세 별도입니다. 인원 할인(10명 이상 5%~)은 아래 견적 계산기에서 자동 적용됩니다.<sup>1</sup></p>
+    </div>
+  </section>
+
+  <!-- Compare -->
+  <section class="compare" id="compare">
+    <div class="wrap">
+      <h2 class="sec-title">운영 방식 비교</h2>
+      <p class="sec-sub">모든 운영 방식에 인터랙티브 학습 사이트가 포함됩니다. 강사 운영비는 반(최대 <span class="cls"></span>명) 단위로 계산됩니다.<sup>2</sup></p>
+      <div class="table-scroll">
+        <table class="cmp" id="cmpTable"></table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section class="calc" id="calc">
+    <div class="wrap">
+      <h2 class="sec-title">견적 계산기</h2>
+      <p class="sec-sub">위에서 담은 패키지에 개별 프로그램을 더하고, 인원·기간·운영 방식을 정하면 견적서가 완성됩니다.</p>
+
+      <div class="calc-layout">
+        <div class="calc-main">
+          <!-- 1 -->
+          <div class="panel">
+            <h3><span class="n">1</span>기본 조건</h3>
+            <div class="cond-grid">
+              <div>
+                <label class="lbl" for="seatInput">수강 인원</label>
+                <div class="seat">
+                  <button type="button" data-seat="-5" aria-label="5명 줄이기">−</button>
+                  <input id="seatInput" type="number" min="1" max="3000" value="20" inputmode="numeric">
+                  <span>명</span>
+                  <button type="button" data-seat="5" aria-label="5명 늘리기">+</button>
+                </div>
+                <input id="seatRange" type="range" min="5" max="300" value="20" aria-label="수강 인원 슬라이더">
+                <div class="tiers" id="seatTiers"></div>
+              </div>
+              <div>
+                <span class="lbl">계약 기간 <em>길수록 5%씩 추가 할인</em></span>
+                <div class="term-cards" id="termCards"></div>
+                <span class="lbl mt">운영 방식</span>
+                <select id="modeSelect"></select>
+                <p class="hint" id="modeDesc"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="panel">
+            <h3><span class="n">2</span>개별 프로그램 추가
+              <span class="pill small" id="groupPill">
+                <button class="on" data-g="lang">언어별</button>
+                <button data-g="field">분야별</button>
+              </span>
+            </h3>
+            <p class="hint">개별 프로그램 다과목 할인: 2개 5% · 3–4개 10% · 5개 이상 15%. 이미 담은 패키지에 들어 있는 프로그램은 표시됩니다.</p>
+            <div class="filters">
+              <input id="progSearch" type="search" placeholder="검색 (예: DELE, HSK, AI, 감정, 건설)">
+              <div class="chips" id="langChips"></div>
+              <div class="chips" id="fieldChips"></div>
+            </div>
+            <div id="progList" class="prog-list"></div>
+          </div>
+
+          <!-- 3 -->
+          <div class="panel">
+            <h3><span class="n">3</span>견적 받는 곳</h3>
+            <div class="form-grid">
+              <label>회사·기관명<input id="fCompany" placeholder="예: ○○건설 인재개발팀"></label>
+              <label>담당자<input id="fContact" placeholder="이름 / 직함"></label>
+              <label>연락처<input id="fPhone" placeholder="010-0000-0000"></label>
+              <label>이메일<input id="fEmail" type="email" placeholder="hr@company.com"></label>
+              <label class="full">요청 사항<textarea id="fMemo" rows="2" placeholder="교육 시작 희망일, 수업 시간대, 출강 지역 등"></textarea></label>
+            </div>
+          </div>
+        </div>
+
+        <aside class="calc-side">
+          <div class="sum" id="sumBox">
+            <div class="sum-top">
+              <h3>견적 요약</h3>
+              <button class="txt-btn" id="resetBtn">모두 지우기</button>
+            </div>
+            <div id="sumLines"></div>
+            <div id="sumTotals"></div>
+            <button class="btn primary block" id="openQuote">견적서 보기</button>
+            <button class="btn outline block" id="copyLink">견적 링크 복사</button>
+          </div>
+          <div class="sum">
+            <h3>계약 기간별 비교</h3>
+            <div id="termCompare"></div>
+          </div>
+          <div class="sum">
+            <h3>정기 고객 혜택</h3>
+            <ul class="checks" id="benefits"></ul>
+            <h4>모든 계약 무료 포함</h4>
+            <ul class="checks" id="freeList"></ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policy -->
+  <section class="policy" id="policy">
+    <div class="wrap">
+      <h2 class="sec-title">요금 정책</h2>
+      <p class="sec-sub">할인은 인원 → 패키지(또는 다과목) → 계약 기간 순서로 곱해서 적용되며, 합계 할인율은 최대 <b id="capPct"></b>입니다.<sup>3</sup></p>
+      <div class="policy-grid">
+        <div class="pcard"><h4>분야별 기본 단가 <small>1명·1개월</small></h4><div id="tblField"></div></div>
+        <div class="pcard"><h4>인원별 할인</h4><div id="tblSeat"></div></div>
+        <div class="pcard"><h4>다과목 할인 <small>개별 프로그램</small></h4><div id="tblCount"></div></div>
+        <div class="pcard"><h4>계약 기간 할인</h4><div id="tblTerm"></div></div>
+      </div>
+      <div class="pcard wide">
+        <h4>프로그램 구성 분석</h4>
+        <div id="analysis"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-in">
+      <div>
+        <h2>문의하기</h2>
+        <p>맞춤 커리큘럼, 300명 이상 대규모 교육, 지방 출강이 필요하면 다인에듀와 상담하세요.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn primary" href="https://www.dainedu.net" target="_blank" rel="noopener">www.dainedu.net</a>
+        <button class="btn outline" id="contactQuote">견적서 만들기</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <ol class="notes">
+      <li>인원 할인은 견적 줄(패키지 또는 프로그램)별 수강 인원 기준으로 적용됩니다.</li>
+      <li>강사 운영비는 견적 줄 1개(패키지는 1개 트랙으로 운영)마다 반 수만큼 부과되며, 수도권 외 출강은 교통비가 별도입니다.</li>
+      <li>견적은 발행일로부터 <span id="validDays"></span>일간 유효하며, 실제 계약 조건은 상담 후 확정됩니다.</li>
+    </ol>
+    <div class="foot-bottom">
+      <span id="supplierLine"></span>
+      <span>© 다인에듀</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar">
+  <div><small id="mbLabel">월 환산</small><strong id="mbTotal">0원</strong></div>
+  <button class="btn primary" id="mbOpen">견적서</button>
+</div>
+
+<!-- Quote modal -->
+<div class="modal" id="quoteModal" aria-hidden="true">
+  <div class="modal-back" data-close></div>
+  <div class="modal-box" role="dialog" aria-label="견적서">
+    <div class="modal-tools">
+      <button class="btn outline" data-close>닫기</button>
+      <button class="btn outline" id="copyText">텍스트 복사</button>
+      <button class="btn primary" id="printBtn">인쇄 · PDF 저장</button>
+    </div>
+    <article class="doc" id="quoteDoc"></article>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="pricing.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
