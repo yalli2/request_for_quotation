@@ -1,0 +1,6 @@
+/* dainedu_curriculum — 자동 생성 덧입히기 (theme/sites) */
+html:root{--bg:var(--dt-bg3);--bg2:var(--dt-bg3);--text:var(--dt-ink);--muted:var(--dt-muted);--accent:var(--dt-blue)!important;--radius:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

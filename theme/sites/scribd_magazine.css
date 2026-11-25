@@ -1,0 +1,6 @@
+/* scribd_magazine — 자동 생성 덧입히기 (theme/sites) */
+html:root{--bg:var(--dt-bg3);--ink:var(--dt-ink);--mute:var(--dt-muted);--accent:var(--dt-blue)!important;--accent2:var(--dt-blue)!important;--line:var(--dt-line)}
+html body{background:var(--dt-bg3)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

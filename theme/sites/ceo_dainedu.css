@@ -1,0 +1,6 @@
+/* ceo_dainedu — 자동 생성 덧입히기 (theme/sites) */
+html:root{--bg:var(--dt-bg3);--surface:var(--dt-bg3);--ink:var(--dt-ink);--muted:var(--dt-muted);--line:var(--dt-line);--accent:var(--dt-blue)!important}
+html body{background:var(--dt-bg3)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

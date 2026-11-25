@@ -1,0 +1,17 @@
+/* powerful_focus — 자동 생성 덧입히기 (theme/sites) */
+html:root{--ink:var(--dt-ink);--ink2:var(--dt-muted);--mut:var(--dt-muted);--line:var(--dt-line);--bg:var(--dt-bg3);--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.banner{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.hero :is(h1,h2,h3,h4,p,span,small,b,strong,em,li,div,label,a:not([class*=btn])){color:inherit}
+.hero :is(p,small,.sub,.lead,.desc){opacity:1;color:var(--dt-ink2)}
+.hero::before,.hero::after{opacity:.15}
+.hero :is(em,mark){background:transparent!important;color:var(--dt-blue)!important}
+.login-hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.login-hero :is(h1,h2,h3,h4,p,span,small,b,strong,em,li,div,label,a:not([class*=btn])){color:inherit}
+.login-hero :is(p,small,.sub,.lead,.desc){opacity:1;color:var(--dt-ink2)}
+.login-hero::before,.login-hero::after{opacity:.15}
+.login-hero :is(em,mark){background:transparent!important;color:var(--dt-blue)!important}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

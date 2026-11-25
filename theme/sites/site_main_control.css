@@ -1,0 +1,9 @@
+/* site_main_control — 자동 생성 덧입히기 (theme/sites) */
+html:root{--bg:var(--dt-bg3);--ink:var(--dt-ink);--sub:var(--dt-muted);--mute:var(--dt-muted);--line:var(--dt-line);--pri:var(--dt-blue)!important;--pri2:var(--dt-blue-l)!important;--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+header{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+header :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+header :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

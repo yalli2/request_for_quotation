@@ -19,6 +19,7 @@
 html body{font-family:var(--dt-font);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:clip}
 html body :is(button,input,select,textarea){font-family:inherit}
 html body :is(h1,h2,h3,h4){letter-spacing:-.3px}
+html body :is(h1,h2,h3,h4,h5,h6):not(:lang(ar)):not(:lang(zh)):not(:lang(ja)){font-family:var(--dt-font)}
 ::selection{background:#cfe4fa}
 :focus-visible{outline:2px solid var(--dt-blue);outline-offset:2px}
 html body input[type=range],html body input[type=checkbox],html body input[type=radio]{accent-color:var(--dt-blue)}

@@ -1,0 +1,7 @@
+/* dainedu_budget — 자동 생성 덧입히기 (theme/sites) */
+html:root{--page:var(--dt-bg3);--surface:var(--dt-bg3);--ink:var(--dt-ink);--ink-2:var(--dt-muted);--muted:var(--dt-muted);--brand:var(--dt-blue)!important;--brand-soft:var(--dt-blue-l)!important;--radius:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.banner{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

@@ -1,0 +1,6 @@
+/* adobe_apps — 자동 생성 덧입히기 (theme/sites) */
+html:root{--bg:var(--dt-bg3);--paper:#ffffff;--ink:var(--dt-ink);--ink-2:var(--dt-muted);--ink-3:var(--dt-muted);--line:var(--dt-line);--line-2:var(--dt-line);--accent:var(--dt-blue)!important;--accent-ink:var(--dt-blue-d)!important;--accent-soft:var(--dt-blue-l)!important;--radius:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

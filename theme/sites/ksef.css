@@ -1,0 +1,14 @@
+/* ksef — 자동 생성 덧입히기 (theme/sites) */
+html:root{--ink:var(--dt-ink);--ink2:var(--dt-muted);--mute:var(--dt-muted);--line:var(--dt-line);--bg:var(--dt-bg3);--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+nav.top{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+nav.top :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+nav.top :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
+header.hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+header.hero :is(h1,h2,h3,h4,p,span,small,b,strong,em,li,div,label,a:not([class*=btn])){color:inherit}
+header.hero :is(p,small,.sub,.lead,.desc){opacity:1;color:var(--dt-ink2)}
+header.hero::before,header.hero::after{opacity:.15}
+header.hero :is(em,mark){background:transparent!important;color:var(--dt-blue)!important}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

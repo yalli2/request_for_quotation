@@ -1,0 +1,14 @@
+/* spa_con — 자동 생성 덧입히기 (theme/sites) */
+html:root{--cream:var(--dt-bg3);--paper:#ffffff;--ink:var(--dt-ink);--mute:var(--dt-muted);--line:var(--dt-line)}
+html body{background:var(--dt-bg3)}
+.top{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+.top :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+.top :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
+.hub-hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.hub-hero :is(h1,h2,h3,h4,p,span,small,b,strong,em,li,div,label,a:not([class*=btn])){color:inherit}
+.hub-hero :is(p,small,.sub,.lead,.desc){opacity:1;color:var(--dt-ink2)}
+.hub-hero::before,.hub-hero::after{opacity:.15}
+.hub-hero :is(em,mark){background:transparent!important;color:var(--dt-blue)!important}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

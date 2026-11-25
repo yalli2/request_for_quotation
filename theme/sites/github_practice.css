@@ -1,0 +1,9 @@
+/* github_practice — 자동 생성 덧입히기 (theme/sites) */
+html:root{--fg:var(--dt-ink);--muted:var(--dt-muted);--bd:var(--dt-line);--bd2:var(--dt-line);--bg:var(--dt-bg3);--acc:var(--dt-blue)!important;--app-bg:var(--dt-bg3);--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.top{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+.top :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+.top :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

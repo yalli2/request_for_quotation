@@ -1,0 +1,4 @@
+/* ai_stock — 자동 생성 덧입히기 (theme/sites) */
+html:root{--acc:var(--dt-blue)!important;--r:var(--dt-r)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}

@@ -1,0 +1,6 @@
+/* gpe — 자동 생성 덧입히기 (theme/sites) */
+html:root{--paper:#ffffff;--ink:var(--dt-ink);--ink2:var(--dt-muted);--muted:var(--dt-muted);--line:var(--dt-line);--c1:var(--dt-blue)!important;--c2:var(--dt-blue)!important;--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

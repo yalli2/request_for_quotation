@@ -1,0 +1,4 @@
+/* flex_spanish — 자동 생성 덧입히기 (theme/sites) */
+html:root{--accent:var(--dt-blue)!important;--accent2:var(--dt-blue)!important;--radius:var(--dt-r)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}

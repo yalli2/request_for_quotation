@@ -1,0 +1,6 @@
+/* auto_marketing — 자동 생성 덧입히기 (theme/sites) */
+html:root{--paper:#ffffff;--ink:var(--dt-ink);--line:var(--dt-line)}
+html body{background:var(--dt-bg3)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

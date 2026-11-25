@@ -1,0 +1,10 @@
+/* osaka — 자동 생성 덧입히기 (theme/sites) */
+html:root{--ink:var(--dt-ink);--mute:var(--dt-muted);--paper:#ffffff;--rule:var(--dt-line);--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.bar{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+.bar :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+.bar :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
+.hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}

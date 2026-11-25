@@ -1,0 +1,7 @@
+/* zapier_practice — 자동 생성 덧입히기 (theme/sites) */
+html:root{--ink:var(--dt-ink);--ink2:var(--dt-muted);--mute:var(--dt-muted);--line:var(--dt-line);--line2:var(--dt-line);--bg:var(--dt-bg3);--r:var(--dt-r)}
+html body{background:var(--dt-bg3)}
+.hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.btn,.button,button.primary{border-radius:var(--dt-r-btn)}
+.card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
