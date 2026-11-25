@@ -1,4 +1,20 @@
-/* heyzen_practice — 자동 생성 덧입히기 (theme/sites) */
-html:root{--r:var(--dt-r)}
+/* heyzen_practice — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--bg:#fafafa!important;--bg2:#f5f5f5!important;--card:#ffffff!important;--card2:#f5f5f5!important;--line:var(--dt-line)!important;--ink:var(--dt-ink)!important;--ink2:var(--dt-muted)!important;--ink3:#8a8a8a!important;--mint:#1d8f71!important;--amber:#9e7830!important;--sky:#30729e!important;--grad:linear-gradient(120deg,var(--dt-blue),var(--dt-violet))!important;--shadow:var(--dt-shadow)!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
+.hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
+.hero :is(h1,h2,h3,h4,p,span,small,b,strong,em,li,div,label,a:not([class*=btn])){color:inherit}
+.hero :is(p,small,.sub,.lead,.desc){opacity:1;color:var(--dt-ink2)}
+.hero::before,.hero::after{opacity:.15}
+.hero :is(em,mark){background:transparent!important;color:var(--dt-blue)!important}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+.concept h4{color:var(--dt-ink)!important}
+.lab .studio-top{background:#f5f5f5!important;color:var(--dt-ink)}
+.screen{background:#f5f5f5!important;color:var(--dt-ink)}
+.cap.s1{background:#f5f5f5!important;color:var(--dt-ink)!important}
+.cap.s3{color:var(--dt-ink)!important}
+.msg.tool{background:#f5f5f5!important;color:var(--dt-ink)!important}
+.codebox{background:#f5f5f5!important;color:var(--dt-ink)!important}
+.iframebox{background:#f5f5f5!important;color:var(--dt-ink)}

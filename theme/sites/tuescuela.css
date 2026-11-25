@@ -1,4 +1,10 @@
-/* tuescuela — 자동 생성 덧입히기 (theme/sites) */
-html:root{--r:var(--dt-r)}
+/* tuescuela — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--bg:#fafafa!important;--bg2:#f5f5f5!important;--card:#ffffff!important;--card2:#f5f5f5!important;--line:var(--dt-line)!important;--fg:var(--dt-ink)!important;--mut:var(--dt-muted)!important;--mut2:#8a8a8a!important;--yel:#987a0f!important;--grn:#1d7e59!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+.dur{background:#f5f5f5!important;color:var(--dt-ink)!important}
+.modal{background:#f5f5f5!important;color:var(--dt-ink)}
+.mvid{background:#f5f5f5!important;color:var(--dt-ink)}

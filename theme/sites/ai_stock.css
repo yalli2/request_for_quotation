@@ -1,4 +1,19 @@
-/* ai_stock — 자동 생성 덧입히기 (theme/sites) */
-html:root{--acc:var(--dt-blue)!important;--r:var(--dt-r)}
+/* ai_stock — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--bg:#fafafa!important;--panel:#ffffff!important;--panel2:#f5f5f5!important;--line:var(--dt-line)!important;--ink:var(--dt-ink)!important;--mute:var(--dt-muted)!important;--dim:#8a8a8a!important;--acc:var(--dt-blue)!important;--ok:#268058!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
+.bar{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+.bar :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+.bar :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+nav{background:#f5f5f5!important;color:var(--dt-ink)}
+.truth{background:var(--dt-hero)!important;color:var(--dt-ink)}
+.truth p{color:var(--dt-ink)!important}
+input[type=number],input[type=text],input[type=date],select,textarea{background:#ffffff!important;color:var(--dt-ink)}
+.bar{background:#f5f5f5!important;color:var(--dt-ink)}
+canvas{background:#f5f5f5!important;color:var(--dt-ink)}
+.prompt{background:#f5f5f5!important;color:var(--dt-ink)!important}
+ul.clean{color:var(--dt-ink)!important}
+.flow button.on{background:var(--dt-ink)!important;color:#fff!important}

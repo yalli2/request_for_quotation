@@ -1,3 +1,8 @@
-/* spa_verb_conjugator — 자동 생성 덧입히기 (theme/sites) */
+/* spa_verb_conjugator — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--color-bg:#fafafa!important;--color-surface:#ffffff!important;--color-text:var(--dt-ink)!important;--color-accent:var(--dt-blue)!important;--color-accent-2:var(--dt-violet)!important;--color-divider:var(--dt-line)!important;--color-neutral-100:#292b31!important;--color-neutral-200:#3f424d!important;--color-neutral-300:#595d6c!important;--color-neutral-400:#75798c!important;--color-neutral-500:#9397ab!important;--color-neutral-600:#b2b6ca!important;--color-neutral-700:#cfd3e5!important;--color-neutral-800:#e4e7f5!important;--color-neutral-900:#f3f5fe!important;--color-accent-100:#2b2741!important;--color-accent-200:#423a6a!important;--color-accent-300:#5d5294!important;--color-accent-400:#796cbf!important;--color-accent-500:#968ae0!important;--color-accent-600:#b5abfc!important;--color-accent-700:#d2cefd!important;--color-accent-800:#e7e5fe!important;--color-accent-900:#f5f4ff!important;--color-accent-2-100:#2b293a!important;--color-accent-2-200:#423e5d!important;--color-accent-2-300:#5c5783!important;--color-accent-2-400:#7972a9!important;--color-accent-2-500:#9690c9!important;--color-accent-2-600:#b5afe8!important;--color-accent-2-700:#d2cefd!important;--color-accent-2-800:#e7e5fe!important;--color-accent-2-900:#f5f4ff!important;--color-section:#ede8fb!important;--color-section-glow:#ede8fb!important;--color-section-ghost:#ede8fb!important;--shadow-sm:var(--dt-shadow)!important;--shadow-md:var(--dt-shadow)!important;--shadow-lg:var(--dt-shadow)!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+

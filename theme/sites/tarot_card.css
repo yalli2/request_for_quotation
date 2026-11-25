@@ -1,4 +1,9 @@
-/* tarot_card — 자동 생성 덧입히기 (theme/sites) */
-html:root{--radius:var(--dt-r)}
+/* tarot_card — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--bg:#fafafa!important;--bg2:#f5f5f5!important;--panel:#ffffff!important;--panel2:#f5f5f5!important;--line:var(--dt-line)!important;--ink:var(--dt-ink)!important;--mute:var(--dt-muted)!important;--gold:#967c40!important;--gold2:#9e8d63!important;--rose:#9e5972!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+.dim{background:#f5f5f5!important;color:var(--dt-ink)}
+.tip{background:#f5f5f5!important;color:var(--dt-ink)}

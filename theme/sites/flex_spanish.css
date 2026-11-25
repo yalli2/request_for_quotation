@@ -1,4 +1,12 @@
-/* flex_spanish — 자동 생성 덧입히기 (theme/sites) */
-html:root{--accent:var(--dt-blue)!important;--accent2:var(--dt-blue)!important;--radius:var(--dt-r)}
+/* flex_spanish — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--bg:#fafafa!important;--bg2:#f5f5f5!important;--card:#ffffff!important;--card2:#f5f5f5!important;--line:var(--dt-line)!important;--txt:var(--dt-ink)!important;--muted:var(--dt-muted)!important;--accent:var(--dt-blue)!important;--accent2:var(--dt-violet)!important;--ok:#1d7a67!important;--shadow:var(--dt-shadow)!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
+.top{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+.top :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+.top :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
+.hero{background:var(--dt-hero)!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line)}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+.top{background:#f5f5f5!important;color:var(--dt-ink)}

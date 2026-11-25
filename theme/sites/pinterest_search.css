@@ -1,4 +1,16 @@
-/* pinterest_search — 자동 생성 덧입히기 (theme/sites) */
-html:root{--acc:var(--dt-blue)!important;--acc2:var(--dt-blue)!important}
+/* pinterest_search — 다크 → 라이트 전환 덧입히기 (theme/sites) */
+html:root{--bg:#fafafa!important;--bg2:#f5f5f5!important;--card:#ffffff!important;--line:var(--dt-line)!important;--txt:var(--dt-ink)!important;--dim:#8a8a8a!important;--acc:var(--dt-blue)!important;--acc2:var(--dt-violet)!important;--ok:#21835f!important;--warn:#9e7a26!important}
+html body{background:var(--dt-bg3)!important;color:var(--dt-ink)}
+.bar{background:#fff!important;color:var(--dt-ink)!important;border-bottom:1px solid var(--dt-line);box-shadow:none}
+.bar :is(a,h1,h2,h3,h4,p,span,small,b,strong,i,em,div,label){color:inherit}
+.bar :is(a,button):not([class*=btn]):not([class*=chip]){border-color:var(--dt-line2)}
 .btn,.button,button.primary{border-radius:var(--dt-r-btn)}
 .card{border-radius:var(--dt-r)}
+.card{box-shadow:var(--dt-shadow)}
+/* literal */
+h1{background:linear-gradient(90deg,var(--dt-blue),var(--dt-violet))!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent;color:transparent!important}
+input[type=text],textarea{background:#ffffff!important;color:var(--dt-ink)}
+pre.code{background:#f5f5f5!important;color:var(--dt-ink)!important}
+.thumb{background:#f5f5f5!important;color:var(--dt-ink)}
+.thumb .mk{background:#f5f5f5!important;color:var(--dt-ink)}
+.bar{background:#f5f5f5!important;color:var(--dt-ink)}
