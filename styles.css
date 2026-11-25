@@ -33,7 +33,7 @@ sup{font-size:.65em;color:var(--muted)}
 .badge{background:var(--blue);color:#fff;border-radius:10px;font-size:12px;min-width:20px;height:20px;padding:0 6px;display:inline-grid;place-items:center;font-weight:600}
 
 /* ---------- hero ---------- */
-.hero{background:linear-gradient(105deg,#f3f7fe 0%,#e8f0fd 45%,#efe9fb 100%);border-bottom:1px solid var(--line)}
+.hero{background:linear-gradient(105deg,#d1e2f4 0%,#c7dcf3 45%,#ddd1f9 100%);border-bottom:1px solid var(--line)}
 .hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
 .hero h1{font-size:40px;line-height:1.22;font-weight:600;letter-spacing:-.6px;margin:0 0 16px}
 .hero p{font-size:17px;color:var(--ink2);max-width:620px;margin:0 0 24px}
